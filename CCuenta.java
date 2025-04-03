@@ -24,6 +24,34 @@ public class CCuenta {
         return saldo;
     }
 
+	public double getSaldo() {
+        return saldo;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getCuenta() {
+        return cuenta;
+    }
+
+    public void setCuenta(String cuenta) {
+        this.cuenta = cuenta;
+    }
+
+    public double getTipoInterés() {
+        return tipoInterés;
+    }
+
+    public void setTipoInterés(double tipoInterés) {
+        this.tipoInterés = tipoInterés;
+    }
+
     public void ingresar(double cantidad) throws Exception
     {
         if (cantidad<0)
