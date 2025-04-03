@@ -3,10 +3,10 @@ package cuentas;
 public class Main {
 
     public static void main(String[] args) {
-		operativa_cuenta();
+		operativa_cuenta(695.00f);
     }
 
-	public static void operativa_cuenta() {
+	public static void operativa_cuenta(float cantidad) {
 		CCuenta cuenta1;
 		double saldoActual;
 
@@ -21,7 +21,7 @@ public class Main {
 		}
 		try {
 			System.out.println("Ingreso en cuenta");
-			cuenta1.ingresar(695);
+			cuenta1.ingresar(cantidad);
 		} catch (Exception e) {
 			System.out.print("Fallo al ingresar");
 		}
