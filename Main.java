@@ -1,11 +1,29 @@
 package cuentas;
 
+/**
+ * Clase principal que ejecuta la aplicación bancaria.
+ * Realiza operaciones sobre una cuenta bancaria utilizando la clase CCuenta.
+ * 
+ * @version 1.0
+ */
 public class Main {
 
+	/**
+     * Método principal que inicia la ejecución del programa.
+     * Llama al método operativa_cuenta con una cantidad predeterminada.
+     * 
+     * @param args Argumentos de la línea de comandos (no utilizados).
+     */
     public static void main(String[] args) {
 		operativa_cuenta(695.00f);
     }
 
+	/**
+     * Método que realiza operaciones sobre una cuenta bancaria.
+     * Muestra el saldo inicial, intenta retirar dinero y luego ingresa una cantidad.
+     * 
+     * @param cantidad Cantidad a ingresar en la cuenta.
+     */
 	public static void operativa_cuenta(float cantidad) {
 		CCuenta cuenta1;
 		double saldoActual;
